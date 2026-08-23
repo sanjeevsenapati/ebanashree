@@ -79,7 +79,7 @@ export const accommodations = [
     id: "bamboo-eco-hut",
     name: "Bamboo Eco Hut",
     tagline: "Nestled in Green Bamboo",
-    image: "/images/eco-hut-bamboo.jpg",
+    image: "images/eco-hut-bamboo.jpg",
     price: "₹3,500",
     period: "per night",
     occupancy: "2 Adults + 1 Child",
@@ -91,7 +91,7 @@ export const accommodations = [
     id: "canopy-treehouse-suite",
     name: "Bamboo Canopy Suite",
     tagline: "Elevated Forest View",
-    image: "/images/hero-bamboo-forest.jpg",
+    image: "images/hero-bamboo-forest.jpg",
     price: "₹4,800",
     period: "per night",
     occupancy: "2 - 3 Guests",
@@ -103,7 +103,7 @@ export const accommodations = [
     id: "stargazer-bell-tent",
     name: "Stargazer Eco Cottage",
     tagline: "Unobstructed Night Sky",
-    image: "/images/night-campfire-stars.jpg",
+    image: "images/night-campfire-stars.jpg",
     price: "₹3,200",
     period: "per night",
     occupancy: "2 Guests",
@@ -170,30 +170,30 @@ export const galleryItems = [
     id: 1,
     title: "50-Acre Bamboo Canopy",
     category: "bamboo",
-    image: "/images/hero-bamboo-forest.jpg"
+    image: "images/hero-bamboo-forest.jpg"
   },
   {
     id: 2,
     title: "Bamboo Eco Hut Cottage",
     category: "huts",
-    image: "/images/eco-hut-bamboo.jpg"
+    image: "images/eco-hut-bamboo.jpg"
   },
   {
     id: 3,
     title: "Campfire & Starry Night",
     category: "night",
-    image: "/images/night-campfire-stars.jpg"
+    image: "images/night-campfire-stars.jpg"
   },
   {
     id: 4,
     title: "Traditional Odia Farm Feast",
     category: "food",
-    image: "/images/odisha-local-dining.jpg"
+    image: "images/odisha-local-dining.jpg"
   },
   {
     id: 5,
     title: "Founder Minaketan Sethi",
     category: "people",
-    image: "/images/founder-minaketan.jpg"
+    image: "images/founder-minaketan.jpg"
   }
 ];
