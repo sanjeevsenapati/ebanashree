@@ -179,6 +179,63 @@ export const experiences = [
   }
 ];
 
+export const bambooForestBenefits = [
+  {
+    id: "oxygen-boost",
+    title: "+35% Oxygen & Air Ions",
+    subtitle: "Cellular Revitalization & High Air Purity",
+    icon: "🌬️",
+    stat: "+35%",
+    statLabel: "More Oxygen Output",
+    desc: "Bamboo produces 35% more oxygen than equivalent stands of hardwood trees and generates high concentrations of negative air ions that refresh your lungs, boost energy, and eliminate morning brain fog."
+  },
+  {
+    id: "stress-reduction",
+    title: "Bamboo Forest Bathing (Shinrin-yoku)",
+    subtitle: "Lower Cortisol & Stress Relief",
+    icon: "🧘",
+    stat: "-28%",
+    statLabel: "Reduced Cortisol Levels",
+    desc: "Living bamboo emits natural airborne compounds called phytoncides. Immersing your senses in the grove significantly lowers stress hormones, regulates blood pressure, and calms an overactive nervous system."
+  },
+  {
+    id: "acoustic-healing",
+    title: "Acoustic Sound Healing & Deep Sleep",
+    subtitle: "Natural 1/f White Noise Frequency",
+    icon: "😴",
+    stat: "100%",
+    statLabel: "Natural White Noise",
+    desc: "The rhythmic whisper of breeze rustling through bamboo stalks creates a natural 1/f acoustic white noise. This soothing soundscape lowers brainwave frequencies, promoting deep, restorative REM sleep."
+  },
+  {
+    id: "cooling-microclimate",
+    title: "Cooling Canopy & Dust-Free Air",
+    subtitle: "2 - 4°C Cooler Microclimate",
+    icon: "🌡️",
+    stat: "2-4°C",
+    statLabel: "Cooler Ambient Temp",
+    desc: "The dense emerald canopy intercepts harsh solar heat and naturally transpiring moisture creates a soothing microclimate 2 to 4 degrees cooler than open city spaces, while trapping airborne dust and pollutants."
+  },
+  {
+    id: "immune-boost",
+    title: "Boosted Immunity & NK Cells",
+    subtitle: "Enhanced Natural Defense Systems",
+    icon: "🛡️",
+    stat: "Immune",
+    statLabel: "System Enhancement",
+    desc: "Studies on forest bathing show that inhaling natural plant volatile compounds in dense bamboo forests boosts Natural Killer (NK) immune cell activity, strengthening the body's natural defense against infection."
+  },
+  {
+    id: "digital-detox",
+    title: "Digital Detox & Mental Clarity",
+    subtitle: "Attention Recovery & Mindfulness",
+    icon: "📱",
+    stat: "Restorative",
+    statLabel: "Mind & Body Reset",
+    desc: "Surrounded by vertical green bamboo lines and dappled sunlight, your eyes and mind recover from screen fatigue. Experience effortless mindfulness, stress reduction, and renewed emotional balance."
+  }
+];
+
 export const galleryItems = [
   {
     id: 1,

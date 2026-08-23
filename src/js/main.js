@@ -1,7 +1,7 @@
 /**
  * eBanashree Main Entry & Application Controller
  */
-import { siteConfig, accommodations, experiences } from './data.js';
+import { siteConfig, accommodations, experiences, bambooForestBenefits } from './data.js';
 import { initBookingEngine } from './booking.js';
 import { initGalleryEngine } from './gallery.js';
 import { initFarmVisualizer } from './map.js';
@@ -115,6 +115,25 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   renderExperiences();
+
+  // 4b. Render Bamboo Forest Health & Wellness Benefits Grid
+  const benefitsGrid = document.getElementById('bambooBenefitsGrid');
+  if (benefitsGrid) {
+    benefitsGrid.innerHTML = bambooForestBenefits.map(b => `
+      <div class="benefit-card fade-up">
+        <div class="benefit-header">
+          <div class="benefit-icon">${b.icon}</div>
+          <div class="benefit-stat-chip">
+            <span class="stat-chip-val">${b.stat}</span>
+            <span class="stat-chip-lbl">${b.statLabel}</span>
+          </div>
+        </div>
+        <h3 class="benefit-title">${b.title}</h3>
+        <span class="benefit-subtitle">${b.subtitle}</span>
+        <p class="benefit-desc">${b.desc}</p>
+      </div>
+    `).join('');
+  }
 
   // 5. Initialize Sub-modules
   initBookingEngine();
