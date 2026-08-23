@@ -1,0 +1,66 @@
+/* eBanashree - Ambient & Scroll Animations */
+
+/* Ambient Floating Bamboo Leaf Effect */
+@keyframes floatLeaf {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-15px) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+}
+
+.floating-leaf {
+  animation: floatLeaf 4s ease-in-out infinite;
+}
+
+/* Pulse Campfire Glow */
+@keyframes campfirePulse {
+  0% {
+    box-shadow: 0 0 20px rgba(224, 169, 109, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 45px rgba(224, 169, 109, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(224, 169, 109, 0.2);
+  }
+}
+
+.pulse-glow {
+  animation: campfirePulse 3s infinite;
+}
+
+/* Scroll Fade In Animation Classes */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delay Utilities */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  .fade-up, .floating-leaf, .pulse-glow {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
