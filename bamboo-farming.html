@@ -279,6 +279,31 @@
     </div>
   </footer>
 
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="sticky-bottom-bar">
+    <a href="tel:+919437000000" class="btn btn-outline" style="flex:1; padding:0.65rem; font-size:0.85rem;">📞 Call Us</a>
+    <button class="btn btn-outline" style="flex:1; padding:0.65rem; font-size:0.85rem;" onclick="openBookingModal('WhatsApp')">💬 WhatsApp</button>
+    <button class="btn btn-accent" style="flex:1.5; padding:0.65rem; font-size:0.85rem;" onclick="openBookingModal()">Book Visit</button>
+  </div>
+
+  <!-- Fullscreen Mobile Navigation Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html#about" class="mobile-nav-link">Our Story</a></li>
+      <li><a href="bamboo-farming.html" class="mobile-nav-link" style="color:var(--accent-gold-light);">Carbon & Bamboo Farming</a></li>
+      <li><a href="index.html#farm" class="mobile-nav-link">50-Acre Zones</a></li>
+      <li><a href="index.html#stay" class="mobile-nav-link">Eco Huts</a></li>
+      <li><a href="index.html#night-stay" class="mobile-nav-link">Night Stay</a></li>
+      <li><a href="index.html#experiences" class="mobile-nav-link">Experiences</a></li>
+      <li><a href="index.html#dining" class="mobile-nav-link">Odia Dining</a></li>
+      <li><a href="index.html#sustainability" class="mobile-nav-link">Sustainability</a></li>
+    </ul>
+    <button class="btn btn-accent" onclick="openBookingModal(); document.getElementById('mobileMenuOverlay').classList.remove('active');">
+      Plan Your Visit Now
+    </button>
+  </div>
+
   <!-- Interactive Booking Enquiry Modal -->
   <div class="modal-backdrop" id="bookingModalBackdrop">
     <div class="booking-modal">

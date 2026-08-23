@@ -80,16 +80,17 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--text-main);
   transition: var(--transition);
   position: relative;
+  white-space: nowrap;
 }
 
 .navbar.transparent .nav-link {
@@ -877,6 +878,15 @@
   box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
 }
 
+@media (max-width: 1150px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
   .sticky-bottom-bar {
     display: flex;
@@ -889,12 +899,6 @@
   }
   .hero-title {
     font-size: 2.75rem;
-  }
-  .nav-links {
-    display: none;
-  }
-  .mobile-toggle {
-    display: block;
   }
 }
 
