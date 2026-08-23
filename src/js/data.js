@@ -105,7 +105,7 @@ export const accommodations = [
     id: "canopy-treehouse-suite",
     name: "Bamboo Canopy Suite",
     tagline: "Elevated Forest View",
-    image: "images/hero-bamboo-forest.jpg",
+    image: "images/canopy-suite-modern.jpg",
     price: "₹4,800",
     period: "per night",
     occupancy: "2 - 3 Guests",
@@ -245,30 +245,42 @@ export const galleryItems = [
   },
   {
     id: 2,
-    title: "Bamboo Eco Hut Cottage",
+    title: "Modern Bamboo Eco Cottage",
     category: "huts",
-    image: "images/eco-hut-bamboo.jpg"
+    image: "images/eco-hut-modern.jpg"
   },
   {
     id: 3,
+    title: "Elevated Canopy Suite Balcony",
+    category: "huts",
+    image: "images/canopy-suite-modern.jpg"
+  },
+  {
+    id: 4,
+    title: "Eco Hut Luxury Interior",
+    category: "huts",
+    image: "images/interior-bamboo-cottage.jpg"
+  },
+  {
+    id: 5,
     title: "Campfire & Starry Night",
     category: "night",
     image: "images/night-campfire-stars.jpg"
   },
   {
-    id: 4,
+    id: 6,
     title: "Traditional Odia Farm Feast",
     category: "food",
     image: "images/odisha-local-dining.jpg"
   },
   {
-    id: 5,
+    id: 7,
     title: "Co-Founder Minaketan Sethi",
     category: "people",
     image: "images/founder-minaketan.jpg"
   },
   {
-    id: 6,
+    id: 8,
     title: "Co-Founder Sanjeev Senapati",
     category: "people",
     image: "images/founder-sanjeev.jpg"
