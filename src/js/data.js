@@ -1,6 +1,6 @@
 /**
  * eBanashree Central Data & Config Architecture
- * Allows owner Minaketan Sethi to update site content seamlessly
+ * Allows owners Minaketan Sethi & Sanjeev Senapati to update site content seamlessly
  */
 
 export const siteConfig = {
@@ -8,11 +8,25 @@ export const siteConfig = {
   tagline: "Bamboo. Nature. Silence. Stay.",
   heroHeadline: "Stay Among the Bamboo",
   heroSubhead: "A 50-acre bamboo farm and eco retreat in Keonjhar, Odisha.",
+  owners: [
+    {
+      name: "Minaketan Sethi",
+      title: "Co-Founder & Owner",
+      image: "images/founder-minaketan.jpg",
+      bio: "Minaketan Sethi envisioned eBanashree as a unique model combining large-scale bamboo farming with authentic rural eco-tourism in Keonjhar, Odisha."
+    },
+    {
+      name: "Sanjeev Senapati",
+      title: "Co-Founder & Owner",
+      image: "images/founder-sanjeev.jpg",
+      bio: "Sanjeev Senapati drives sustainable retreat design, digital eco-tourism initiatives, and community engagement to make eBanashree a global beacon of bamboo living."
+    }
+  ],
   owner: {
-    name: "Minaketan Sethi",
-    title: "Founder & Owner",
+    name: "Minaketan Sethi & Sanjeev Senapati",
+    title: "Co-Founders & Owners",
     location: "Keonjhar, Odisha, India",
-    bio: "Minaketan Sethi envisioned eBanashree not merely as an agricultural enterprise, but as a sanctuary where human life reconnects with the soothing rhythm of green bamboo. Born out of a deep reverence for Odisha's soil, eBanashree balances sustainable bamboo cultivation with authentic rural eco-hospitality."
+    bio: "Minaketan Sethi and Sanjeev Senapati envisioned eBanashree not merely as an agricultural enterprise, but as a sanctuary where human life reconnects with the soothing rhythm of green bamboo. Born out of a deep reverence for Odisha's soil, eBanashree balances sustainable bamboo cultivation with authentic rural eco-hospitality."
   },
   contact: {
     phone: "+91 94370 00000",
@@ -192,8 +206,14 @@ export const galleryItems = [
   },
   {
     id: 5,
-    title: "Founder Minaketan Sethi",
+    title: "Co-Founder Minaketan Sethi",
     category: "people",
     image: "images/founder-minaketan.jpg"
+  },
+  {
+    id: 6,
+    title: "Co-Founder Sanjeev Senapati",
+    category: "people",
+    image: "images/founder-sanjeev.jpg"
   }
 ];

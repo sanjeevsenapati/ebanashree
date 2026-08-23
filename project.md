@@ -10,7 +10,7 @@ Below is a complete project concept and a ready-to-use **Antigravity prompt**.
 
 **A 50-Acre Bamboo Farm & Eco Retreat in Keonjhar, Odisha**
 
-**Founder / Owner:** Minaketan Sethi
+**Founders / Owners:** Minaketan Sethi & Sanjeev Senapati
 **Location:** Keonjhar, Odisha, India
 
 ---
@@ -208,9 +208,9 @@ Explain:
 - Why eco-tourism
 - The long-term vision
 
-Owner:
+Owners / Founders:
 
-**Minaketan Sethi**
+**Minaketan Sethi & Sanjeev Senapati**
 
 Create a founder section with photograph.
 
@@ -605,7 +605,7 @@ Display:
 50-Acre Bamboo Farm & Eco Retreat
 Keonjhar, Odisha
 
-**Owner:** Minaketan Sethi
+**Owners / Founders:** Minaketan Sethi & Sanjeev Senapati
 
 Contact:
 
@@ -857,7 +857,7 @@ Create a production-quality, visually stunning, mobile-first website for **eBana
 ## Business
 
 **Brand:** eBanashree
-**Owner:** Minaketan Sethi
+**Owners / Founders:** Minaketan Sethi & Sanjeev Senapati
 **Location:** Keonjhar, Odisha, India
 **Property:** 50-acre bamboo farm
 **Business:** Bamboo farming + eco-tourism + eco-hut accommodation + nature experiences + rural tourism
@@ -1111,7 +1111,7 @@ Heading:
 
 Introduce:
 
-**Minaketan Sethi**
+**Minaketan Sethi & Sanjeev Senapati**
 
 Owner and founder of eBanashree.
 
@@ -1371,7 +1371,7 @@ Display:
 50-Acre Bamboo Farm & Eco Retreat
 Keonjhar, Odisha, India
 
-**Owner:** Minaketan Sethi
+**Owners / Founders:** Minaketan Sethi & Sanjeev Senapati
 
 Provide configurable:
 

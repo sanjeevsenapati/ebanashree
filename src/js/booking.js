@@ -74,7 +74,7 @@ export function initBookingEngine() {
       window.open(whatsappUrl, '_blank');
 
       // Show confirmation message in UI
-      alert(`Thank you, ${name}! Your booking request details have been prepared. Opening WhatsApp to send your enquiry directly to Minaketan Sethi & eBanashree team.`);
+      alert(`Thank you, ${name}! Your booking request details have been prepared. Opening WhatsApp to send your enquiry directly to Minaketan Sethi, Sanjeev Senapati & the eBanashree team.`);
 
       window.closeBookingModal();
       bookingForm.reset();
