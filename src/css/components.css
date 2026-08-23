@@ -80,17 +80,18 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.75rem;
   list-style: none;
 }
 
 .nav-link {
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: var(--text-main);
   transition: var(--transition);
   position: relative;
-  white-space: nowrap;
+  white-space: nowrap !important;
+  line-height: 1 !important;
 }
 
 .navbar.transparent .nav-link {
