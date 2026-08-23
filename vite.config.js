@@ -1,5 +1,14 @@
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: './', // Use relative paths for GitHub Pages subpath deployment
+  base: './', // Relative base for subpath GitHub Pages deployment
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        farming: resolve(__dirname, 'bamboo-farming.html'),
+      },
+    },
+  },
 });
