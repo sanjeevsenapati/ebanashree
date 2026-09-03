@@ -325,7 +325,7 @@
 /* Farm Visualizer Map */
 .farm-map-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
@@ -369,7 +369,7 @@
 /* Accommodation Cards */
 .stay-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 2rem;
 }
 
@@ -565,17 +565,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .filter-btn {
   background: var(--bg-surface);
   border: 1px solid var(--border-light);
-  padding: 0.5rem 1.25rem;
+  padding: 0.65rem 1.5rem;
   border-radius: var(--radius-full);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-muted);
   cursor: pointer;
@@ -590,48 +590,77 @@
 
 .exp-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.75rem;
 }
 
 .exp-card {
   background: var(--bg-surface);
-  border-radius: var(--radius-md);
-  padding: 1.75rem;
+  border-radius: 40px;
+  padding: 2rem 1.75rem;
   border: 1px solid var(--border-light);
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(200, 149, 71, 0.05) 0%, transparent 100%);
+  border-radius: 40px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .exp-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--sage-green);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(200, 149, 71, 0.1);
+  border-color: var(--accent-gold-light);
+}
+
+.exp-card:hover::before {
+  opacity: 1;
 }
 
 .exp-icon {
-  width: 48px;
-  height: 48px;
-  background: var(--light-sage);
-  color: var(--primary-green);
-  border-radius: var(--radius-md);
+  width: 56px;
+  height: 56px;
+  background: rgba(200, 149, 71, 0.1);
+  color: var(--accent-gold-dark, #B68338);
+  border-radius: 16px;
+  border: 1px solid rgba(200, 149, 71, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.exp-card:hover .exp-icon {
+  transform: scale(1.1) rotate(5deg);
+  background: rgba(200, 149, 71, 0.15);
 }
 
 .exp-title {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary-green);
   margin-bottom: 0.5rem;
 }
 
 .exp-desc {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--text-muted);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
 }
 
 /* Founder Story */
@@ -736,92 +765,133 @@
 /* Bamboo Forest Health & Wellness Benefits */
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.75rem;
-  margin-top: 2.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .benefit-card {
   background: var(--bg-surface);
-  border-radius: var(--radius-lg);
+  border-radius: 40px;
   border: 1px solid var(--border-light);
-  padding: 2rem;
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition-normal);
+  padding: 2.5rem 2rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: visible;
+  z-index: 1;
+}
+
+.benefit-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(232, 191, 123, 0.05) 0%, transparent 100%);
+  border-radius: 40px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .benefit-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--primary-green-light);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(30, 70, 32, 0.1);
+  border-color: var(--accent-gold);
+}
+
+.benefit-card:hover::before {
+  opacity: 1;
 }
 
 .benefit-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  min-height: 1.5rem;
 }
 
 .benefit-icon {
-  width: 52px;
-  height: 52px;
-  background: var(--light-sage);
-  color: var(--primary-green);
-  border-radius: 50%;
+  position: absolute;
+  top: -28px;
+  left: 2rem;
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, var(--primary-green), var(--bamboo-green));
+  color: #FFF;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.75rem;
+  font-size: 2.2rem;
+  box-shadow: 0 10px 20px rgba(30, 70, 32, 0.3);
+  transform: rotate(-4deg);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid var(--bg-surface);
+}
+
+.benefit-card:hover .benefit-icon {
+  transform: rotate(0deg) scale(1.1);
+  box-shadow: 0 15px 25px rgba(232, 191, 123, 0.4);
 }
 
 .benefit-stat-chip {
-  background: var(--primary-green);
-  color: #FFF;
-  padding: 0.4rem 0.85rem;
+  background: rgba(232, 191, 123, 0.15);
+  color: var(--primary-green);
+  padding: 0.5rem 1rem;
   border-radius: var(--radius-full);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  border: 1px solid rgba(232, 191, 123, 0.3);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover .benefit-stat-chip {
+  background: var(--bg-surface);
+  border-color: var(--accent-gold);
+  box-shadow: 0 4px 10px rgba(232, 191, 123, 0.15);
 }
 
 .stat-chip-val {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--accent-gold);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--primary-green);
   line-height: 1.1;
 }
 
 .stat-chip-lbl {
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  opacity: 0.85;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--text-muted);
 }
 
 .benefit-title {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--primary-green);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
 }
 
 .benefit-subtitle {
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--accent-gold-light);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-gold-dark, #B68338);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.25rem;
   display: block;
 }
 
 .benefit-desc {
-  font-size: 0.93rem;
-  color: var(--text-muted);
+  font-size: 0.95rem;
   line-height: 1.6;
+  color: var(--text-muted);
+  opacity: 0.9;
 }
 
 /* Gallery Masonry & Lightbox */

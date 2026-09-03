@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     stayGrid.innerHTML = accommodations.map(stay => `
       <div class="stay-card fade-up">
         <div class="stay-image-wrap">
-          <img src="${stay.image}" alt="${stay.name}" loading="lazy" class="stay-image" />
+          <img src="${stay.image}" alt="${stay.name}" loading="lazy" decoding="async" class="stay-image" />
           <span class="stay-tag">${stay.tagline}</span>
         </div>
         <div class="stay-content">
@@ -71,12 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="stay-amenities">
             ${stay.amenities.map(am => `<span class="amenity-chip">${am}</span>`).join('')}
           </div>
-          <div class="stay-footer">
-            <div class="stay-price">
-              <span class="price-val">${stay.price}</span>
-              <span class="price-sub">${stay.period}</span>
-            </div>
-            <button class="btn btn-primary" onclick="openBookingModal('${stay.name}')">Book Stay</button>
+          <div class="stay-footer" style="justify-content: center; margin-top: 1rem;">
+            <button class="btn btn-primary" style="width: 100%;" onclick="openBookingModal('${stay.name}')">Enquire to Book</button>
           </div>
         </div>
       </div>

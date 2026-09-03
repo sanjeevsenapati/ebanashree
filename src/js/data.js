@@ -85,6 +85,30 @@ export const farmZones = [
     subtitle: "Fresh Regional Cuisine",
     desc: "Open-air dining pavilion surrounded by traditional Odia vegetable gardens and bamboo shoots, serving fresh home-style Odia meals.",
     icon: "🍲"
+  },
+  {
+    id: "zone-6",
+    code: "Zone F",
+    title: "Meditation & Yoga Deck",
+    subtitle: "Sunrise & Morning Wellness",
+    desc: "A serene wooden platform elevated slightly amidst the bamboo canopy, perfect for morning sun salutations and guided meditation.",
+    icon: "🧘‍♀️"
+  },
+  {
+    id: "zone-7",
+    code: "Zone G",
+    title: "Lotus Pond & Wetland",
+    subtitle: "Biodiversity & Aquatic Life",
+    desc: "A natural water body filled with blooming lotuses, attracting local bird species and providing a calming microclimate to the farm.",
+    icon: "🪷"
+  },
+  {
+    id: "zone-8",
+    code: "Zone H",
+    title: "Bamboo Nursery & Seedlings",
+    subtitle: "Cultivation & Growth",
+    desc: "The birthplace of eBanashree's bamboo. A dedicated nursery where new bamboo saplings are nurtured before being planted across the estate.",
+    icon: "🌱"
   }
 ];
 

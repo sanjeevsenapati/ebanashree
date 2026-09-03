@@ -20,6 +20,12 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎋</text></svg>" />
 
+  <!-- Performance & Preloading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="images/hero-bamboo-forest.jpg" />
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/src/css/main.css" />
   <link rel="stylesheet" href="/src/css/components.css" />
@@ -41,7 +47,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#about" class="nav-link">Our Story</a></li>
-          <li><a href="bamboo-farming.html" class="nav-link" style="color:var(--accent-gold); font-weight:600;">Carbon & Farming</a></li>
+          <li><a href="#carbon-farming" class="nav-link" style="color:var(--accent-gold); font-weight:600;">Carbon & Farming</a></li>
           <li><a href="#benefits" class="nav-link">Forest Benefits</a></li>
           <li><a href="#stay" class="nav-link">Eco Huts</a></li>
           <li><a href="#experiences" class="nav-link">Experiences</a></li>
@@ -237,7 +243,7 @@
         </div>
 
         <div class="night-image-frame fade-up delay-200">
-          <img src="images/night-campfire-stars.jpg" alt="Night stay experience at eBanashree with campfire under starry night" />
+          <img src="images/night-campfire-stars.jpg" alt="Night stay experience at eBanashree with campfire under starry night" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -294,7 +300,7 @@
         </div>
 
         <div style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg);" class="fade-up delay-200">
-          <img src="images/odisha-local-dining.jpg" alt="Authentic Odia feast served on banana leaf in bamboo dining gazebo" />
+          <img src="images/odisha-local-dining.jpg" alt="Authentic Odia feast served on banana leaf in bamboo dining gazebo" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -336,6 +342,194 @@
     </div>
   </section>
 
+  <!-- Hero Banner -->
+  <section class="hero" id="carbon-farming" style="background-image: url('images/bamboo-carbon-impact.jpg'); min-height: 75vh;">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge floating-leaf">
+        <span>🌱</span> Environmental Science & Ecological Restoration
+      </div>
+      <h1 class="hero-title">Bamboo Farming & <span>Carbon Impact</span></h1>
+      <p class="hero-subtitle">
+        Discover how 50 acres of cultivated bamboo at eBanashree absorb massive amounts of carbon dioxide, enrich Odisha's soil, and pioneer sustainable ecological tourism.
+      </p>
+      <div class="hero-actions">
+        <a href="#carbon-calculator" class="btn btn-accent">Try Carbon Calculator ↓</a>
+        <a href="index.html#stay" class="btn btn-outline-white">Book a Farm Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Environmental Metrics -->
+  <div class="container">
+    <div class="hero-stats">
+      <div class="stats-card fade-up">
+        <div class="stat-item">
+          <div class="stat-number">+35%</div>
+          <div class="stat-label">More Oxygen Released</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">400+ Tons</div>
+          <div class="stat-label">CO₂ Captured / Ha / Yr</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">0% Chemicals</div>
+          <div class="stat-label">100% Organic Growth</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3-5 Yrs</div>
+          <div class="stat-label">Maturity vs 30 Yrs Tree</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deep Dive: Carbon Sequestration & Carbon Points -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">Carbon Sequestration Science</span>
+        <h2 class="section-title">The Power of Bamboo as a Carbon Sink</h2>
+        <p class="section-description">
+          Bamboo is nature’s fastest-growing Woody Grass, possessing unprecedented carbon absorption capabilities that outperform traditional slow-growing timber species.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3rem; align-items:center; margin-bottom:4rem;">
+        <div class="fade-up">
+          <h3 style="font-size:1.8rem; color:var(--primary-green); margin-bottom:1rem;">How Bamboo Captures Carbon Points</h3>
+          <p style="color:var(--text-muted); font-size:1rem; margin-bottom:1.25rem;">
+            During rapid growth cycles (where culms can grow up to 1 meter per day), bamboo absorbs atmospheric carbon dioxide (\(\text{CO}_2\)) through photosynthesis at rates unmatched by most hardwood trees.
+          </p>
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:0.85rem;">
+            <li style="display:flex; align-items:flex-start; gap:0.75rem; color:var(--text-main);">
+              <span style="color:var(--accent-gold); font-weight:700;">✓</span>
+              <div><strong>Below-Ground Rhizome Storage:</strong> Up to 40% of captured carbon is stored long-term in dense, living underground root networks that remain intact even after harvesting mature culms.</div>
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.75rem; color:var(--text-main);">
+              <span style="color:var(--accent-gold); font-weight:700;">✓</span>
+              <div><strong>Durable Product Lock-in:</strong> When bamboo is crafted into eco huts, furniture, or construction materials, that carbon remains permanently locked out of the atmosphere.</div>
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.75rem; color:var(--text-main);">
+              <span style="color:var(--accent-gold); font-weight:700;">✓</span>
+              <div><strong>Carbon Credit & Offset Eligibility:</strong> Large-scale bamboo plantations generate verified Carbon Offset Points, allowing individuals and businesses to neutralize their carbon footprint.</div>
+            </li>
+            <li style="display:flex; align-items:flex-start; gap:0.75rem; color:var(--text-main);">
+              <span style="color:var(--accent-gold); font-weight:700;">✓</span>
+              <div><strong>Physiological Health Benefits:</strong> Staying inside living bamboo groves exposes visitors to airborne phytoncides and +35% higher oxygen output, lowering cortisol stress levels and boosting Natural Killer (NK) immune cell activity.</div>
+            </li>
+          </ul>
+        </div>
+
+        <div style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg);" class="fade-up delay-200">
+          <img src="images/bamboo-carbon-impact.jpg" alt="Lush bamboo plantation carbon sequestration site at eBanashree Keonjhar" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- Comparative Table: Bamboo vs Conventional Trees -->
+      <div style="background:var(--bg-surface); padding:2.5rem; border-radius:var(--radius-lg); border:1px solid var(--border-light); box-shadow:var(--shadow-md);" class="fade-up">
+        <h3 style="font-size:1.6rem; color:var(--primary-green); margin-bottom:1.5rem; text-align:center;">
+          Comparative Environmental Impact
+        </h3>
+        
+        <div style="overflow-x:auto;">
+          <table style="width:100%; border-collapse:collapse; text-align:left; font-size:0.95rem;">
+            <thead>
+              <tr style="border-bottom:2px solid var(--primary-green); color:var(--primary-green);">
+                <th style="padding:1rem;">Feature / Metric</th>
+                <th style="padding:1rem; color:var(--accent-gold);">🎋 eBanashree Bamboo</th>
+                <th style="padding:1rem; color:var(--text-muted);">🌲 Traditional Hardwood Trees</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:1rem; font-weight:600;">Harvest Cycle / Maturity</td>
+                <td style="padding:1rem; color:var(--bamboo-green); font-weight:700;">3 - 5 Years</td>
+                <td style="padding:1rem; color:var(--text-muted);">25 - 50 Years</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:1rem; font-weight:600;">Oxygen Output</td>
+                <td style="padding:1rem; color:var(--bamboo-green); font-weight:700;">35% Higher than Trees</td>
+                <td style="padding:1rem; color:var(--text-muted);">Baseline Standard</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:1rem; font-weight:600;">Re-planting Required?</td>
+                <td style="padding:1rem; color:var(--bamboo-green); font-weight:700;">No (Self-regenerating Rhizomes)</td>
+                <td style="padding:1rem; color:var(--text-muted);">Yes (Dies after harvesting)</td>
+              </tr>
+              <tr style="border-bottom:1px solid var(--border-light);">
+                <td style="padding:1rem; font-weight:600;">Soil Erosion Control</td>
+                <td style="padding:1rem; color:var(--bamboo-green); font-weight:700;">Extremely High (Fibrous Root Matrix)</td>
+                <td style="padding:1rem; color:var(--text-muted);">Moderate (Taproots)</td>
+              </tr>
+              <tr>
+                <td style="padding:1rem; font-weight:600;">Chemical Inputs Needed</td>
+                <td style="padding:1rem; color:var(--bamboo-green); font-weight:700;">Zero Pesticides / Fertilizers</td>
+                <td style="padding:1rem; color:var(--text-muted);">Varies</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Carbon Offset Calculator -->
+  <section class="section" id="carbon-calculator" style="background:var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">Interactive Tool</span>
+        <h2 class="section-title">Calculate Your Travel Carbon Offset</h2>
+        <p class="section-description">
+          Estimate the carbon footprint of your journey to eBanashree and see how many bamboo plants absorb your travel emissions!
+        </p>
+      </div>
+
+      <div style="max-width:700px; margin:0 auto; background:var(--bg-surface); padding:2.5rem; border-radius:var(--radius-lg); border:1px solid var(--border-light); box-shadow:var(--shadow-lg);" class="fade-up">
+        <div class="form-group">
+          <label class="form-label" for="calcMode">Select Mode of Travel</label>
+          <select id="calcMode" class="form-control">
+            <option value="car">Car / SUV Travel (0.17 kg CO₂ / km)</option>
+            <option value="flight">Domestic Flight (0.24 kg CO₂ / km)</option>
+            <option value="train">Train Travel (0.04 kg CO₂ / km)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="calcDistance">Travel Distance (in Kilometers)</label>
+          <input type="number" id="calcDistance" class="form-control" value="250" min="10" max="5000" />
+        </div>
+
+        <div style="margin-top:2rem; padding:1.5rem; background:var(--light-sage); border-radius:var(--radius-md); text-align:center;">
+          <div style="font-size:0.85rem; font-weight:700; color:var(--primary-green); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.35rem;">
+            Estimated Travel Carbon Footprint
+          </div>
+          <div id="calcResultCO2" style="font-family:var(--font-serif); font-size:2.5rem; font-weight:700; color:var(--primary-green);">
+            42.5 kg CO₂
+          </div>
+          <div id="calcResultBamboo" style="font-size:1.05rem; color:var(--accent-wood); font-weight:600; margin-top:0.5rem;">
+            🌱 Neutralized by approx. <strong>2 Bamboo Stalks</strong> annually at eBanashree!
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plant a Bamboo Legacy Program -->
+  <section class="section" style="background:var(--primary-green); color:#FFF; text-align:center; padding:5rem 0;">
+    <div class="container fade-up">
+      <span style="color:var(--accent-gold-light); text-transform:uppercase; font-size:0.85rem; letter-spacing:0.15em; font-weight:700;">Sponsorship & Legacy</span>
+      <h2 style="font-size:3.25rem; color:#FFF; margin:0.5rem 0 1rem 0;">Plant a Bamboo. Leave a Legacy.</h2>
+      <p style="font-size:1.2rem; color:rgba(255,255,255,0.85); max-width:700px; margin:0 auto 2.5rem auto;">
+        During your retreat stay at eBanashree, you can plant your own labeled bamboo sapling in our bio-conservation zone. Receive a digital green certificate and track its growth.
+      </p>
+      <button class="btn btn-accent" onclick="openBookingModal('Plant a Bamboo Sponsorship')">
+        Sponsor / Plant a Bamboo Sapling →
+      </button>
+    </div>
+  </section>
+
+  
   <!-- Founder Story Section -->
   <section class="section" id="founder" style="background:var(--bg-surface-elevated);">
     <div class="container">
@@ -353,7 +547,7 @@
 
       <div class="founders-cards-grid">
         <div class="founder-card fade-up">
-          <img src="/images/founder-minaketan.jpg" alt="Minaketan Sethi - Co-Founder of eBanashree Bamboo Retreat" class="founder-card-img" loading="eager" />
+          <img src="/images/founder-minaketan.jpg" alt="Minaketan Sethi - Co-Founder of eBanashree Bamboo Retreat" class="founder-card-img" loading="lazy" decoding="async" />
           <div class="founder-card-body">
             <h3 class="founder-name">Minaketan Sethi</h3>
             <span class="founder-role">Co-Founder & Owner</span>
@@ -364,7 +558,7 @@
         </div>
 
         <div class="founder-card fade-up delay-200">
-          <img src="/images/founder-sanjeev.jpg" alt="Sanjeev Senapati - Co-Founder of eBanashree Bamboo Retreat" class="founder-card-img" loading="eager" />
+          <img src="/images/founder-sanjeev.jpg" alt="Sanjeev Senapati - Co-Founder of eBanashree Bamboo Retreat" class="founder-card-img" loading="lazy" decoding="async" />
           <div class="founder-card-body">
             <h3 class="founder-name">Sanjeev Senapati</h3>
             <span class="founder-role">Co-Founder & Owner</span>
@@ -549,7 +743,7 @@
     <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
     <ul class="mobile-nav-links">
       <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
-      <li><a href="bamboo-farming.html" class="mobile-nav-link" style="color:var(--accent-gold-light);">Carbon & Bamboo Farming</a></li>
+      <li><a href="#carbon-farming" class="mobile-nav-link" style="color:var(--accent-gold-light);">Carbon & Bamboo Farming</a></li>
       <li><a href="#benefits" class="mobile-nav-link">Forest Health Benefits</a></li>
       <li><a href="#farm" class="mobile-nav-link">50-Acre Zones</a></li>
       <li><a href="#stay" class="mobile-nav-link">Eco Huts</a></li>
@@ -570,74 +764,63 @@
     <div class="booking-modal">
       <button class="modal-close" id="modalCloseBtn">✕</button>
       <div style="text-align:center; margin-bottom:1.5rem;">
-        <span style="font-size:0.8rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase; letter-spacing:0.1em;">Reservation Enquiry</span>
-        <h3 style="font-size:1.75rem; color:var(--primary-green);">Plan Your Stay at eBanashree</h3>
-        <p style="font-size:0.85rem; color:var(--text-muted);">Check availability & send enquiry directly to Minaketan Sethi & Sanjeev Senapati via WhatsApp</p>
+        <span style="font-size:0.8rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase; letter-spacing:0.1em;">Private Resort Access</span>
+        <h3 style="font-size:1.75rem; color:var(--primary-green); margin:0.5rem 0;">Book Your Stay</h3>
+        <p style="font-size:0.95rem; color:var(--text-muted); line-height:1.5; margin-bottom:1.5rem;">
+          eBanashree is an exclusive private eco-retreat. We do not accept automated online bookings. To discuss availability, pricing, or to plan your personalized stay, please reach out to our founders directly.
+        </p>
+        
+        <div style="display:flex; flex-direction:column; gap:1rem;">
+          <a href="tel:+919437000000" class="btn btn-primary" style="width:100%; padding:0.9rem; font-size:1rem; display:flex; justify-content:center; align-items:center; gap:0.5rem;">
+            📞 Call: +91 94370 00000
+          </a>
+          <a href="https://wa.me/919437000000?text=Namaste%20eBanashree!%20I%20would%20like%20to%20enquire%20about%20a%20stay." target="_blank" class="btn btn-accent" style="width:100%; padding:0.9rem; font-size:1rem; display:flex; justify-content:center; align-items:center; gap:0.5rem;">
+            💬 Enquire on WhatsApp
+          </a>
+        </div>
       </div>
-
-      <form id="bookingEnquiryForm">
-        <div class="form-group">
-          <label class="form-label" for="guestName">Your Full Name *</label>
-          <input type="text" id="guestName" class="form-control" placeholder="e.g. Ananya Das" required />
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="guestPhone">Mobile Number (WhatsApp) *</label>
-            <input type="tel" id="guestPhone" class="form-control" placeholder="+91 98765 43210" required />
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="staySelect">Accommodation Option</label>
-            <select id="staySelect" class="form-control">
-              <!-- Rendered via booking.js -->
-            </select>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="checkinDate">Check-in Date</label>
-            <input type="date" id="checkinDate" class="form-control" />
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="checkoutDate">Check-out Date</label>
-            <input type="date" id="checkoutDate" class="form-control" />
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="guestCount">Number of Guests</label>
-          <select id="guestCount" class="form-control">
-            <option value="1 Adult">1 Adult</option>
-            <option value="2 Adults" selected>2 Adults</option>
-            <option value="2 Adults + 1 Child">2 Adults + 1 Child</option>
-            <option value="Family Group (4+ Guests)">Family Group (4+ Guests)</option>
-            <option value="Corporate / School Group">Corporate / School Group</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label class="form-label" for="specialRequests">Special Requests / Questions</label>
-          <textarea id="specialRequests" class="form-control" rows="3" placeholder="Food preferences, night stay campfire, corporate offsite enquiries..."></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-accent" style="width:100%; padding:0.9rem; font-size:1rem; margin-top:0.5rem;">
-          Submit & Send WhatsApp Enquiry →
-        </button>
-      </form>
-    </div>
   </div>
 
   <!-- Fullscreen Lightbox Modal -->
   <div class="lightbox-modal" id="lightboxModal">
     <span class="lightbox-close" id="lightboxClose">&times;</span>
     <div class="lightbox-content">
-      <img id="lightboxImg" src="" alt="Gallery Preview" />
+      <img id="lightboxImg" src="" alt="Gallery Preview" decoding="async" />
       <div id="lightboxCaption" style="color:#FFF; text-align:center; margin-top:1rem; font-size:1.1rem; font-family:var(--font-serif);"></div>
     </div>
   </div>
 
   <!-- Application Entry Script -->
   <script type="module" src="/src/js/main.js"></script>
+<!-- Interactive Calculator Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modeSelect = document.getElementById('calcMode');
+      const distInput = document.getElementById('calcDistance');
+      const resultCO2 = document.getElementById('calcResultCO2');
+      const resultBamboo = document.getElementById('calcResultBamboo');
+
+      function calculate() {
+        if (!distInput || !resultCO2 || !resultBamboo) return;
+        const dist = parseFloat(distInput.value) || 0;
+        const mode = modeSelect ? modeSelect.value : 'car';
+        
+        let factor = 0.17;
+        if (mode === 'flight') factor = 0.24;
+        if (mode === 'train') factor = 0.04;
+
+        const totalCO2 = dist * factor;
+        const bambooStalks = Math.max(1, Math.round(totalCO2 / 20));
+
+        resultCO2.textContent = `${totalCO2.toFixed(1)} kg CO₂`;
+        resultBamboo.innerHTML = `🌱 Neutralized by approx. <strong>${bambooStalks} Bamboo Stalks</strong> annually at eBanashree!`;
+      }
+
+      if (modeSelect) modeSelect.addEventListener('change', calculate);
+      if (distInput) distInput.addEventListener('input', calculate);
+      calculate();
+    });
+  </script>
+
 </body>
 </html>
