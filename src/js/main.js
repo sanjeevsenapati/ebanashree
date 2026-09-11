@@ -1,12 +1,33 @@
 /**
  * eBanashree Main Entry & Application Controller
  */
-import { siteConfig, accommodations, experiences, bambooForestBenefits } from './data.js';
+import { siteConfig, accommodations, experiences, bambooForestBenefits, advisoryCommittee, eventDays } from './data.js';
 import { initBookingEngine } from './booking.js';
 import { initGalleryEngine } from './gallery.js';
 import { initFarmVisualizer } from './map.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Coming Soon Popup Logic
+  const comingSoonBackdrop = document.getElementById('comingSoonModalBackdrop');
+  const comingSoonClose = document.getElementById('comingSoonCloseBtn');
+  const comingSoonExplore = document.getElementById('comingSoonExploreBtn');
+
+  if (comingSoonBackdrop && !sessionStorage.getItem('comingSoonDismissed')) {
+    setTimeout(() => {
+      comingSoonBackdrop.classList.add('active');
+    }, 800); // Slight delay for effect
+  }
+
+  function dismissComingSoon() {
+    if (comingSoonBackdrop) {
+      comingSoonBackdrop.classList.remove('active');
+      sessionStorage.setItem('comingSoonDismissed', 'true');
+    }
+  }
+
+  if (comingSoonClose) comingSoonClose.addEventListener('click', dismissComingSoon);
+  if (comingSoonExplore) comingSoonExplore.addEventListener('click', dismissComingSoon);
+
   // 1. Initialize Sticky & Transparent Navbar Logic
   const navbar = document.getElementById('mainNavbar');
   const heroSection = document.getElementById('hero');
@@ -127,6 +148,40 @@ document.addEventListener('DOMContentLoaded', () => {
         <h3 class="benefit-title">${b.title}</h3>
         <span class="benefit-subtitle">${b.subtitle}</span>
         <p class="benefit-desc">${b.desc}</p>
+      </div>
+    `).join('');
+  }
+
+  // 4c. Render Advisory Committee
+  const advisoryGrid = document.getElementById('advisoryGridContainer');
+  if (advisoryGrid) {
+    advisoryGrid.innerHTML = advisoryCommittee.map(advisor => `
+      <div class="founder-card fade-up">
+        <img src="${advisor.image}" alt="${advisor.name} - ${advisor.role}" class="founder-card-img" style="height: 220px;" loading="lazy" decoding="async" />
+        <div class="founder-card-body">
+          <h3 class="founder-name">${advisor.name}</h3>
+          <span class="founder-role">${advisor.role}</span>
+          <p class="founder-bio">${advisor.bio}</p>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  // 4d. Render Event Days
+  const eventsGrid = document.getElementById('eventsGridContainer');
+  if (eventsGrid) {
+    eventsGrid.innerHTML = eventDays.map(event => `
+      <div class="exp-card fade-up visible">
+        ${event.images && event.images.length > 0 ? `
+          <div class="event-image-gallery">
+            ${event.images.map(img => `<img src="${img}" alt="${event.title}" class="event-gallery-img" loading="lazy" />`).join('')}
+          </div>
+        ` : ''}
+        <div style="font-size:0.85rem; font-weight:700; color:var(--accent-gold-light); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:0.5rem; margin-top: 0.5rem;">
+          ${event.date}
+        </div>
+        <h3 class="exp-title">${event.title}</h3>
+        <p class="exp-desc">${event.desc}</p>
       </div>
     `).join('');
   }

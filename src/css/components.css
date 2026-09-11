@@ -663,6 +663,44 @@
   opacity: 0.9;
 }
 
+/* Event Image Gallery */
+.event-image-gallery {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-green-light) transparent;
+}
+
+.event-image-gallery::-webkit-scrollbar {
+  height: 6px;
+}
+
+.event-image-gallery::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.event-image-gallery::-webkit-scrollbar-thumb {
+  background-color: var(--primary-green-light);
+  border-radius: var(--radius-full);
+}
+
+.event-gallery-img {
+  scroll-snap-align: start;
+  flex: 0 0 85%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
 /* Founder Story */
 .founder-grid {
   display: flex;
@@ -677,8 +715,18 @@
   margin-top: 1.5rem;
 }
 
+.advisors-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
 @media (max-width: 868px) {
   .founders-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .advisors-cards-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -1,6 +1,6 @@
 # eBanashree Project State & System Reference 🎋
 
-> **Last Updated:** August 24, 2026  
+> **Last Updated:** September 3, 2026  
 > **Status:** Active / Production Ready  
 > **Repository:** `sanjeevsenapati/ebanashree`  
 > **Active Branch:** `main` (Source) | `host` (Production Static Deployment)
@@ -78,7 +78,8 @@ ebanashree/
 ### Typography & Aesthetics
 - **Headings Font:** 'Playfair Display', Georgia, Serif (Earthy, premium, warm)
 - **Body Font:** 'Plus Jakarta Sans', system-ui, Sans-serif (Clean, modern readability)
-- **Visual Vibe:** Premium eco-resort feel, generous whitespace, subtle green glow effects (`box-shadow`), glassmorphic backdrop filters (`backdrop-filter: blur(12px)`).
+- **Visual Vibe:** Premium eco-resort feel, generous whitespace, circular card corners (40px border-radius), sleek 1px borders, subtle green glow effects (`box-shadow`), glassmorphic backdrop filters (`backdrop-filter: blur(12px)`), and breakout asymmetric icon designs.
+- **Performance:** Optimized for mobile with pre-connected web fonts, LCP hero image preloading, and native lazy-loading with async decoding for below-the-fold assets.
 
 ---
 
@@ -88,7 +89,7 @@ ebanashree/
 - **Hero Banner:** Full-width hero scene with background image, clear branding, and call-to-action buttons ("Stay With Us", "Explore Retreat").
 - **Co-Founders Story:** Storytelling block highlighting Minaketan Sethi and Sanjeev Senapati.
 - **Eco Hut Accommodation Suite:** Detailed card grid for cottage options (Bamboo Cottage, Deluxe Stargazer, Eco Tent Camp) with pricing, capacity, amenities, and instant booking CTA.
-- **Interactive 50-Acre Zone Visualizer:** Interactive tabbed explorer mapping key areas (Bamboo Groves, Eco Huts, Stargazer Lawn, Bamboo Craft Workshop, Organic Farm).
+- **Interactive 50-Acre Zone Visualizer:** Interactive tabbed explorer mapping 8 key areas (Bamboo Groves, Eco Huts, Stargazer Lawn, Bamboo Craft Workshop, Organic Farm, Meditation Deck, Lotus Pond, Bamboo Nursery). Grid layouts utilize `auto-fill` for proper item distribution.
 - **Odia Rural Culture & Cuisine:** Highlighting local farm-to-table Odia meals, pottery, and night bonfires.
 - **Filterable Gallery:** Categorized photo grid with interactive lightbox image viewer modal.
 - **Direct Reservation Engine:** Dynamic modal with date selection, guest counter, accommodation picker, auto-calculating totals, and generating pre-filled WhatsApp enquiry links (`https://wa.me/...`).

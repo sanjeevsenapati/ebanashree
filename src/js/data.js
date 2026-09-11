@@ -310,3 +310,62 @@ export const galleryItems = [
     image: "images/founder-sanjeev.jpg"
   }
 ];
+
+export const advisoryCommittee = [
+  {
+    name: "Gagan Pattnaik",
+    role: "Environmental & Financial Advisor",
+    image: "images/advisor_gagan.jpg",
+    bio: "Expert in sustainable bamboo cultivation and ecological restoration with over 20 years of experience."
+  },
+  {
+    name: "Sushanta Dash",
+    role: "Community Engagement Lead",
+    image: "images/advisor_sushanta.jpg",
+    bio: "Passionate about rural eco-tourism and empowering local artisan communities in Odisha."
+  },
+  {
+    name: "Ranjan Barik",
+    role: "Eco-Architecture Consultant",
+    image: "images/advisor_ranjan.jpg",
+    bio: "Specializes in traditional bamboo construction techniques and low-impact sustainable design."
+  }
+];
+
+export const eventDays = [
+  {
+    id: "world-bamboo-day",
+    title: "World Bamboo Day",
+    date: "September 18",
+    desc: "A day dedicated to raising awareness about bamboo conservation and its potential to mitigate climate change.",
+    images: ["images/hero-bamboo-forest.jpg", "images/bamboo-carbon-impact.jpg"]
+  },
+  {
+    id: "earth-day",
+    title: "Earth Day Retreat",
+    date: "April 22",
+    desc: "Special eco-retreat focusing on sustainable living practices, organic farming, and carbon foot-print reduction.",
+    images: ["images/eco-hut-bamboo.jpg", "images/interior-bamboo-cottage.jpg"]
+  },
+  {
+    id: "local-artisan-festival",
+    title: "Odia Artisan Festival",
+    date: "November (Annual)",
+    desc: "Celebrating local craftsmanship, hand-woven bamboo art, and traditional Odia culture.",
+    images: ["images/odisha-local-dining.jpg", "images/night-campfire-stars.jpg"]
+  },
+  {
+    id: "inauguration-day",
+    title: "eBanashree Inauguration Day",
+    date: "Upcoming (TBA)",
+    desc: "The grand opening of the eBanashree Eco Retreat, marking the beginning of our 50-acre sustainable hospitality journey.",
+    images: ["images/eco-hut-modern.jpg", "images/canopy-suite-modern.jpg"]
+  },
+  {
+    id: "foundation-day",
+    title: "eBanashree Foundation Day",
+    date: "Annual Celebration",
+    desc: "A day to reflect on our journey, celebrate our milestones in bamboo cultivation, and reaffirm our commitment to Odisha's soil.",
+    images: ["images/founder-minaketan.jpg", "images/founder-sanjeev.jpg"]
+  }
+];
