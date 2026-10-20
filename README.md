@@ -11,10 +11,11 @@
 **eBanashree** combines sustainable bamboo cultivation with authentic rural eco-tourism. The web application showcases the 50-acre retreat, eco hut cottage stays, carbon sequestration impact, authentic Odia farm dining, and local experiences with an interactive WhatsApp enquiry system.
 
 ### Key Features
-- **Co-Founders Story**: Meet co-founders Minaketan Sethi and Sanjeev Senapati.
+- **Co-Founders & Advisory Committee**: Meet co-founders Minaketan Sethi and Sanjeev Senapati, along with the multi-disciplinary Advisory Committee.
+- **Combating Deforestation**: Comprehensive ecological module detailing why cultivated bamboo is nature's strongest shield against global forest felling, with on-the-ground challenges eBanashree takes on.
 - **50-Acre Farm Visualizer**: Interactive zone explorer (Groves, Eco Huts, Stargazing Lawn, Craft Workshop, Organic Farm).
-- **Eco Hut Accommodations**: Detailed view of cottage types, amenities, and nightly rates.
-- **Environmental Carbon Calculator**: Interactive tool calculating travel emissions neutralized by bamboo plants on `bamboo-farming.html`.
+- **Eco Hut Accommodations**: Detailed view of cottage types, amenities, and booking enquiries.
+- **Environmental Carbon Calculator**: Interactive tool calculating travel emissions neutralized by bamboo plants.
 - **Photo Gallery**: Filterable photo showcase with lightbox image preview.
 - **Direct Reservation Engine**: Modal interface generating pre-formatted WhatsApp booking enquiries.
 

@@ -91,7 +91,7 @@ ebanashree/
 - **Eco Hut Accommodation Suite:** Detailed card grid for cottage options (Bamboo Cottage, Deluxe Stargazer, Eco Tent Camp) with pricing, capacity, amenities, and instant booking CTA.
 - **Interactive 50-Acre Zone Visualizer:** Interactive tabbed explorer mapping 8 key areas (Bamboo Groves, Eco Huts, Stargazer Lawn, Bamboo Craft Workshop, Organic Farm, Meditation Deck, Lotus Pond, Bamboo Nursery). Grid layouts utilize `auto-fill` for proper item distribution.
 - **Odia Rural Culture & Cuisine:** Highlighting local farm-to-table Odia meals, pottery, and night bonfires.
-- **Filterable Gallery:** Categorized photo grid with interactive lightbox image viewer modal.
+- **Combating Deforestation (`#deforestation`):** Comprehensive eco-restoration module detailing how bamboo serves as a structural timber substitute, perpetual rhizome regenerator, soil binder against erosion on degraded/mining lands in Odisha, wildlife biodiversity corridor, and clean bio-energy fuelwood alternative. Features interactive quantitative metrics, 6 core strategy pillars, side-by-side comparative table against conventional timber logging, and the eBanashree Conservation Pledge.
 - **Direct Reservation Engine:** Dynamic modal with date selection, guest counter, accommodation picker, auto-calculating totals, and generating pre-filled WhatsApp enquiry links (`https://wa.me/...`).
 
 ### 2. Bamboo Science & Impact Page (`bamboo-farming.html`)

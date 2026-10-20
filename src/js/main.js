@@ -1,7 +1,7 @@
 /**
  * eBanashree Main Entry & Application Controller
  */
-import { siteConfig, accommodations, experiences, bambooForestBenefits, advisoryCommittee, eventDays } from './data.js';
+import { siteConfig, accommodations, experiences, bambooForestBenefits, teamMembers, eventDays, deforestationData } from './data.js';
 import { initBookingEngine } from './booking.js';
 import { initGalleryEngine } from './gallery.js';
 import { initFarmVisualizer } from './map.js';
@@ -152,16 +152,30 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
-  // 4c. Render Advisory Committee
-  const advisoryGrid = document.getElementById('advisoryGridContainer');
-  if (advisoryGrid) {
-    advisoryGrid.innerHTML = advisoryCommittee.map(advisor => `
-      <div class="founder-card fade-up">
-        <img src="${advisor.image}" alt="${advisor.name} - ${advisor.role}" class="founder-card-img" style="height: 220px;" loading="lazy" decoding="async" />
-        <div class="founder-card-body">
-          <h3 class="founder-name">${advisor.name}</h3>
-          <span class="founder-role">${advisor.role}</span>
-          <p class="founder-bio">${advisor.bio}</p>
+  // 4c. Render Team Members Grouped by Category
+  const teamGrid = document.getElementById('teamGridContainer');
+  if (teamGrid) {
+    // Group members by category
+    const groupedMembers = teamMembers.reduce((acc, member) => {
+      acc[member.category] = acc[member.category] || [];
+      acc[member.category].push(member);
+      return acc;
+    }, {});
+
+    teamGrid.innerHTML = Object.entries(groupedMembers).map(([category, members]) => `
+      <div class="team-category-section" style="margin-bottom: 2rem;">
+        <h3 style="margin-top: 1rem; margin-bottom: 1.5rem; color: var(--primary-green); font-family: var(--font-serif); font-size: 1.8rem;" class="fade-up">${category}</h3>
+        <div class="advisors-cards-grid" style="margin-bottom: 1.5rem;">
+          ${members.map(member => `
+            <div class="founder-card fade-up">
+              <img src="${member.image}" alt="${member.name} - ${member.role}" class="founder-card-img" style="height: 220px;" loading="lazy" decoding="async" />
+              <div class="founder-card-body">
+                <h3 class="founder-name">${member.name}</h3>
+                <span class="founder-role">${member.role}</span>
+                <p class="founder-bio">${member.bio}</p>
+              </div>
+            </div>
+          `).join('')}
         </div>
       </div>
     `).join('');
@@ -185,6 +199,66 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `).join('');
   }
+
+  // 4e. Render Deforestation Section (Metrics, Pillars, Comparison)
+  const deforestMetricsContainer = document.getElementById('deforestationMetricsGrid');
+  if (deforestMetricsContainer && deforestationData.metrics) {
+    deforestMetricsContainer.innerHTML = deforestationData.metrics.map(m => `
+      <div class="deforest-stat-card fade-up">
+        <div class="deforest-stat-num">${m.value}</div>
+        <div class="deforest-stat-label">${m.label}</div>
+        <div class="deforest-stat-sub">${m.sub}</div>
+      </div>
+    `).join('');
+  }
+
+  const deforestPillarsContainer = document.getElementById('deforestationPillarsGrid');
+  if (deforestPillarsContainer && deforestationData.pillars) {
+    deforestPillarsContainer.innerHTML = deforestationData.pillars.map(p => `
+      <div class="deforest-card fade-up">
+        <div class="deforest-card-header">
+          <div class="deforest-card-icon">${p.icon}</div>
+          <span class="deforest-card-badge">${p.badge}</span>
+        </div>
+        <h3 class="deforest-card-title">${p.title}</h3>
+        <p class="deforest-card-desc">${p.desc}</p>
+        <div class="deforest-card-footer">
+          <span class="deforest-footer-stat">${p.stat}</span>
+          <span class="deforest-footer-label">${p.statLabel}</span>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  const deforestComparisonContainer = document.getElementById('deforestationComparisonBody');
+  if (deforestComparisonContainer && deforestationData.comparisons) {
+    deforestComparisonContainer.innerHTML = deforestationData.comparisons.map(c => `
+      <tr>
+        <td style="font-weight:600; color:var(--text-main);">${c.feature}</td>
+        <td class="cell-timber">🪓 ${c.timber}</td>
+        <td class="cell-bamboo">🎋 ${c.bamboo}</td>
+      </tr>
+    `).join('');
+  }
+
+  const deforestChallengesContainer = document.getElementById('deforestationChallengesGrid');
+  if (deforestChallengesContainer && deforestationData.challenges) {
+    deforestChallengesContainer.innerHTML = deforestationData.challenges.map(ch => `
+      <div class="deforest-challenge-card fade-up">
+        <div class="challenge-header">
+          <span class="challenge-badge">${ch.badge}</span>
+          <div class="challenge-icon">${ch.icon}</div>
+        </div>
+        <h3 class="challenge-title">${ch.challenge}</h3>
+        <p class="challenge-desc">${ch.description}</p>
+        <div class="challenge-commitment-box">
+          <span class="challenge-action-tag">🎋 Our Direct Action</span>
+          <p class="challenge-commitment-text">${ch.commitment}</p>
+        </div>
+      </div>
+    `).join('');
+  }
+
 
   // 5. Initialize Sub-modules
   initBookingEngine();

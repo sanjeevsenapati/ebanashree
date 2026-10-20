@@ -48,7 +48,8 @@
       <nav>
         <ul class="nav-links">
           <li><a href="#about" class="nav-link">Our Story</a></li>
-          <li><a href="#carbon-farming" class="nav-link" style="color:var(--accent-gold); font-weight:600;">Carbon & Farming</a></li>
+          <li><a href="#deforestation" class="nav-link" style="color:var(--accent-gold); font-weight:600;">Deforestation</a></li>
+          <li><a href="#carbon-farming" class="nav-link">Carbon & Farming</a></li>
           <li><a href="#benefits" class="nav-link">Forest Benefits</a></li>
           <li><a href="#stay" class="nav-link">Eco Huts</a></li>
           <li><a href="#experiences" class="nav-link">Experiences</a></li>
@@ -343,6 +344,93 @@
     </div>
   </section>
 
+  <!-- Combating Deforestation Section -->
+  <section class="section deforestation-section" id="deforestation">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-subtitle">Eco-Restoration & Forest Defense</span>
+        <h2 class="section-title">Combating Deforestation: The Bamboo Shield</h2>
+        <p class="section-description">
+          Over 15 billion wild forest trees are felled worldwide each year, accelerating soil loss and climate instability. At eBanashree in Keonjhar, Odisha, our 50-acre bamboo sanctuary demonstrates a revolutionary truth: humanity can meet its timber, structural, and material needs without cutting down a single ancient forest tree.
+        </p>
+      </div>
+
+      <!-- Key Quantitative Deforestation Metrics -->
+      <div class="deforestation-metrics-grid" id="deforestationMetricsGrid">
+        <!-- Rendered dynamically from data.js -->
+      </div>
+
+      <!-- Core Pillars: How Bamboo Halts Deforestation -->
+      <div class="deforestation-pillars-grid" id="deforestationPillarsGrid">
+        <!-- Rendered dynamically from data.js -->
+      </div>
+
+      <!-- Challenges We Take On to Fight Deforestation -->
+      <div class="deforest-challenges-wrapper fade-up">
+        <div style="text-align:center; max-width:740px; margin:0 auto 2.5rem auto;">
+          <span style="font-size:0.85rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase; letter-spacing:0.12em;">Our Bold Environmental Commitments</span>
+          <h3 style="font-size:2rem; color:var(--primary-green); margin:0.4rem 0;">Challenges We Take On to Combat Deforestation</h3>
+          <p style="font-size:1rem; color:var(--text-muted); line-height:1.6;">
+            We refuse to be passive observers of forest decline. In the mining-heavy, ecologically vulnerable landscape of Keonjhar, Odisha, eBanashree takes on real, on-the-ground challenges to protect native forests and reverse environmental degradation.
+          </p>
+        </div>
+
+        <div class="deforest-challenges-grid" id="deforestationChallengesGrid">
+          <!-- Rendered dynamically from data.js -->
+        </div>
+      </div>
+
+      <!-- Side-by-Side Comparative Table -->
+      <div class="deforest-comparison-container fade-up">
+        <div style="text-align:center; max-width:680px; margin:0 auto 2rem auto;">
+          <span style="font-size:0.85rem; font-weight:700; color:var(--accent-gold); text-transform:uppercase; letter-spacing:0.12em;">Direct Environmental Contrast</span>
+          <h3 style="font-size:1.75rem; color:var(--primary-green); margin:0.4rem 0;">Conventional Hardwood Logging vs. Bamboo Stewardship</h3>
+          <p style="font-size:0.95rem; color:var(--text-muted);">
+            Understanding why cultivated bamboo is recognized by environmental scientists as nature's most potent weapon against deforestation.
+          </p>
+        </div>
+
+        <div class="deforest-table-wrap">
+          <table class="deforest-table">
+            <thead>
+              <tr>
+                <th class="col-feature">Ecological Dimension</th>
+                <th class="col-timber">🪵 Traditional Hardwood Timber</th>
+                <th class="col-bamboo">🎋 eBanashree Cultivated Bamboo</th>
+              </tr>
+            </thead>
+            <tbody id="deforestationComparisonBody">
+              <!-- Rendered dynamically from data.js -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Deforestation Eco Pledge Banner -->
+      <div class="deforest-pledge-banner fade-up">
+        <div>
+          <div style="font-size:0.8rem; font-weight:700; color:var(--accent-gold-light); text-transform:uppercase; letter-spacing:0.15em; margin-bottom:0.75rem;">
+            🎋 The eBanashree Conservation Pledge
+          </div>
+          <div class="deforest-pledge-quote">
+            "Every bamboo eco hut crafted and every culm harvested <span>leaves a century-old forest tree standing tall.</span>"
+          </div>
+          <p class="deforest-pledge-sub">
+            Visit our 50-acre living forest in Keonjhar. Experience firsthand how sustainable agriculture shields Odisha’s fragile soil, purifies groundwater, and creates a flourishing wildlife habitat.
+          </p>
+        </div>
+        <div class="deforest-pledge-actions">
+          <button class="btn btn-accent pulse-glow" onclick="openBookingModal('Deforestation & Eco Retreat Tour')">
+            Visit Our Bamboo Sanctuary →
+          </button>
+          <a href="#carbon-farming" class="btn btn-outline-white">
+            Explore Carbon & Farming Science ↓
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Hero Banner -->
   <section class="hero" id="carbon-farming" style="background-image: url('images/bamboo-carbon-impact.jpg'); min-height: 75vh;">
     <div class="hero-overlay"></div>
@@ -530,15 +618,14 @@
     </div>
   </section>
 
-  
-  <!-- Founder Story Section -->
-  <section class="section" id="founder" style="background:var(--bg-surface-elevated);">
+  <!-- Meet Our Team Section -->
+  <section class="section" id="team" style="background:var(--bg-surface-elevated);">
     <div class="container">
       <div class="section-header fade-up" style="margin-bottom:2rem;">
-        <span class="section-subtitle">Meet the Founders</span>
+        <span class="section-subtitle">Meet Our Team</span>
         <h2 class="section-title">A Vision Rooted in the Soil of Odisha</h2>
         <p class="section-description">
-          Minaketan Sethi and Sanjeev Senapati envisioned eBanashree as a sanctuary combining 50 acres of bamboo cultivation with authentic rural eco-tourism in Keonjhar, Odisha.
+          The passionate individuals driving the vision, operations, and sustainable growth of eBanashree.
         </p>
       </div>
 
@@ -546,49 +633,11 @@
         "eBanashree is not simply a place to sleep. It is a sanctuary to slow down, breathe deeply, walk among bamboo, and reconnect with what truly matters."
       </div>
 
-      <div class="founders-cards-grid">
-        <div class="founder-card fade-up">
-          <img src="/images/founder-minaketan.jpg" alt="Minaketan Sethi - Co-Founder of eBanashree Bamboo Retreat" class="founder-card-img" loading="lazy" decoding="async" />
-          <div class="founder-card-body">
-            <h3 class="founder-name">Minaketan Sethi</h3>
-            <span class="founder-role">Co-Founder & Owner</span>
-            <p class="founder-bio">
-              Minaketan Sethi envisioned eBanashree as a unique model combining large-scale bamboo farming with authentic rural eco-tourism in Keonjhar, Odisha. He leads the bamboo cultivation and eco-restoration operations.
-            </p>
-          </div>
-        </div>
-
-        <div class="founder-card fade-up delay-200">
-          <img src="/images/founder-sanjeev.jpg" alt="Sanjeev Senapati - Co-Founder of eBanashree Bamboo Retreat" class="founder-card-img" loading="lazy" decoding="async" />
-          <div class="founder-card-body">
-            <h3 class="founder-name">Sanjeev Senapati</h3>
-            <span class="founder-role">Co-Founder & Owner</span>
-            <p class="founder-bio">
-              Sanjeev Senapati drives sustainable retreat design, digital eco-tourism initiatives, and community engagement to make eBanashree a global beacon of peaceful bamboo living and green hospitality.
-            </p>
-          </div>
-        </div>
-      </div>
+      <!-- Unified Team Container (Injected via JS) -->
+      <div id="teamGridContainer"></div>
 
       <div style="text-align:center; margin-top:2.5rem;" class="fade-up">
-        <button class="btn btn-primary" onclick="openBookingModal('Founder Enquiry')">Contact Founders</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Advisory Committee Section -->
-  <section class="section" id="advisory" style="background:var(--bg-surface);">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-subtitle">Our Guiding Voices</span>
-        <h2 class="section-title">Advisory Committee</h2>
-        <p class="section-description">
-          The visionaries and experts who guide our sustainable journey and ecological practices.
-        </p>
-      </div>
-
-      <div class="advisors-cards-grid" id="advisoryGridContainer">
-        <!-- Rendered via main.js -->
+        <button class="btn btn-primary" onclick="openBookingModal('General Enquiry')">Get in Touch</button>
       </div>
     </div>
   </section>
@@ -708,7 +757,7 @@
       </p>
       <div style="display:flex; align-items:center; justify-content:center; gap:1.25rem; flex-wrap:wrap;">
         <button class="btn btn-accent" onclick="openBookingModal()">Plan Your Stay Now</button>
-        <button class="btn btn-outline-white" onclick="openBookingModal('General WhatsApp Enquiry')">💬 WhatsApp Us</button>
+        <button class="btn btn-outline-white" style="display:none;" onclick="openBookingModal('General WhatsApp Enquiry')">💬 WhatsApp Us</button>
       </div>
     </div>
   </section>
@@ -742,6 +791,7 @@
             <li><a href="#dining" class="footer-link">Odia Farm Dining</a></li>
             <li><a href="#experiences" class="footer-link">Bamboo Forest Walk</a></li>
             <li><a href="#sustainability" class="footer-link">Sustainability</a></li>
+            <li><a href="#deforestation" class="footer-link">Combating Deforestation</a></li>
           </ul>
         </div>
 
@@ -754,7 +804,7 @@
             📍 Keonjhar, Odisha, India
           </p>
           <p style="font-size:0.9rem; color:rgba(255,255,255,0.7); margin-bottom:1rem;">
-            📞 +91 94370 00000
+            📞 +91 94370XXXXX
           </p>
           <button class="btn btn-accent" style="padding:0.6rem 1.25rem; font-size:0.85rem;" onclick="openBookingModal()">Submit Booking Enquiry</button>
         </div>
@@ -769,7 +819,7 @@
   <!-- Mobile Sticky Bottom Action Bar -->
   <div class="sticky-bottom-bar">
     <a href="tel:+919437000000" class="btn btn-outline" style="flex:1; padding:0.65rem; font-size:0.85rem;">📞 Call Us</a>
-    <button class="btn btn-outline" style="flex:1; padding:0.65rem; font-size:0.85rem;" onclick="openBookingModal('WhatsApp')">💬 WhatsApp</button>
+    <button class="btn btn-outline" style="flex:1; padding:0.65rem; font-size:0.85rem; display:none;" onclick="openBookingModal('WhatsApp')">💬 WhatsApp</button>
     <button class="btn btn-accent" style="flex:1.5; padding:0.65rem; font-size:0.85rem;" onclick="openBookingModal()">Book Stay</button>
   </div>
 
@@ -778,7 +828,8 @@
     <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
     <ul class="mobile-nav-links">
       <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
-      <li><a href="#carbon-farming" class="mobile-nav-link" style="color:var(--accent-gold-light);">Carbon & Bamboo Farming</a></li>
+      <li><a href="#deforestation" class="mobile-nav-link" style="color:var(--accent-gold-light);">Deforestation & Forest Defense</a></li>
+      <li><a href="#carbon-farming" class="mobile-nav-link">Carbon & Bamboo Farming</a></li>
       <li><a href="#benefits" class="mobile-nav-link">Forest Health Benefits</a></li>
       <li><a href="#farm" class="mobile-nav-link">50-Acre Zones</a></li>
       <li><a href="#stay" class="mobile-nav-link">Eco Huts</a></li>
@@ -807,9 +858,9 @@
         
         <div style="display:flex; flex-direction:column; gap:1rem;">
           <a href="tel:+919437000000" class="btn btn-primary" style="width:100%; padding:0.9rem; font-size:1rem; display:flex; justify-content:center; align-items:center; gap:0.5rem;">
-            📞 Call: +91 94370 00000
+            📞 Call Us
           </a>
-          <a href="https://wa.me/919437000000?text=Namaste%20eBanashree!%20I%20would%20like%20to%20enquire%20about%20a%20stay." target="_blank" class="btn btn-accent" style="width:100%; padding:0.9rem; font-size:1rem; display:flex; justify-content:center; align-items:center; gap:0.5rem;">
+          <a href="https://wa.me/919437000000?text=Namaste%20eBanashree!%20I%20would%20like%20to%20enquire%20about%20a%20stay." target="_blank" class="btn btn-accent" style="width:100%; padding:0.9rem; font-size:1rem; display:none; justify-content:center; align-items:center; gap:0.5rem;">
             💬 Enquire on WhatsApp
           </a>
         </div>
