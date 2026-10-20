@@ -7,26 +7,9 @@ import { initGalleryEngine } from './gallery.js';
 import { initFarmVisualizer } from './map.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 0. Coming Soon Popup Logic
-  const comingSoonBackdrop = document.getElementById('comingSoonModalBackdrop');
-  const comingSoonClose = document.getElementById('comingSoonCloseBtn');
-  const comingSoonExplore = document.getElementById('comingSoonExploreBtn');
+  // 0. Coming Soon Popup Logic (Disabled)
+  // Popup disabled per user request
 
-  if (comingSoonBackdrop && !sessionStorage.getItem('comingSoonDismissed')) {
-    setTimeout(() => {
-      comingSoonBackdrop.classList.add('active');
-    }, 800); // Slight delay for effect
-  }
-
-  function dismissComingSoon() {
-    if (comingSoonBackdrop) {
-      comingSoonBackdrop.classList.remove('active');
-      sessionStorage.setItem('comingSoonDismissed', 'true');
-    }
-  }
-
-  if (comingSoonClose) comingSoonClose.addEventListener('click', dismissComingSoon);
-  if (comingSoonExplore) comingSoonExplore.addEventListener('click', dismissComingSoon);
 
   // 1. Initialize Sticky & Transparent Navbar Logic
   const navbar = document.getElementById('mainNavbar');
