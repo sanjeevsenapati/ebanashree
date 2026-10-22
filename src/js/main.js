@@ -204,23 +204,38 @@ document.addEventListener('DOMContentLoaded', () => {
       return acc;
     }, {});
 
-    teamGrid.innerHTML = Object.entries(groupedMembers).map(([category, members]) => `
-      <div class="team-category-section" style="margin-bottom: 2rem;">
-        <h3 style="margin-top: 1rem; margin-bottom: 1.5rem; color: var(--primary-green); font-family: var(--font-serif); font-size: 1.8rem;" class="fade-up">${category}</h3>
-        <div class="advisors-cards-grid" style="margin-bottom: 1.5rem;">
-          ${members.map(member => `
-            <div class="founder-card fade-up">
-              <img src="${member.image}" alt="${member.name} - ${member.role}" class="founder-card-img" style="height: 220px;" loading="lazy" decoding="async" />
-              <div class="founder-card-body">
-                <h3 class="founder-name">${member.name}</h3>
-                <span class="founder-role">${member.role}</span>
-                <p class="founder-bio">${member.bio}</p>
+    teamGrid.innerHTML = Object.entries(groupedMembers).map(([category, members]) => {
+      const isFounders = category.toLowerCase().includes('founder');
+      const gridClass = isFounders ? 'founders-cards-grid' : 'advisors-cards-grid';
+      return `
+        <div class="team-category-section" style="margin-bottom: 2.5rem;">
+          <h3 style="margin-top: 1rem; margin-bottom: 1.5rem; color: var(--primary-green); font-family: var(--font-serif); font-size: 1.8rem;" class="fade-up">${category}</h3>
+          <div class="${gridClass}" style="margin-bottom: 1.5rem;">
+            ${members.map(member => isFounders ? `
+              <div class="founder-card fade-up">
+                <img src="${member.image}" alt="${member.name} - ${member.role}" class="founder-card-img" style="height: 320px; object-position: center 20%;" loading="lazy" decoding="async" />
+                <div class="founder-card-body">
+                  <h3 class="founder-name">${member.name}</h3>
+                  <span class="founder-role">${member.role}</span>
+                  <p class="founder-bio">${member.bio}</p>
+                </div>
               </div>
-            </div>
-          `).join('')}
+            ` : `
+              <div class="advisor-card fade-up">
+                <div class="advisor-avatar-wrap">
+                  <img src="${member.image}" alt="${member.name} - ${member.role}" class="advisor-avatar-img" loading="lazy" decoding="async" />
+                </div>
+                <div class="advisor-card-body">
+                  <h4 class="advisor-name">${member.name}</h4>
+                  <span class="advisor-role">${member.role}</span>
+                  <p class="advisor-bio">${member.bio}</p>
+                </div>
+              </div>
+            `).join('')}
+          </div>
         </div>
-      </div>
-    `).join('');
+      `;
+    }).join('');
   }
 
   // 4d. Render Event Days

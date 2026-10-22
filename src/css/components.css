@@ -972,14 +972,23 @@
 .advisors-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 1.5rem;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 992px) {
+  .advisors-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 868px) {
   .founders-cards-grid {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 600px) {
   .advisors-cards-grid {
     grid-template-columns: 1fr;
   }
@@ -1038,6 +1047,89 @@
   color: var(--text-muted);
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+/* Compact Advisor Cards */
+.advisor-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+  align-items: center;
+  text-align: center;
+}
+
+.advisor-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary-green-light);
+}
+
+.advisor-avatar-wrap {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  background: var(--bg-surface-elevated);
+  border: 3px solid var(--light-sage);
+  box-shadow: 0 4px 14px rgba(30, 70, 32, 0.12);
+  margin-bottom: 0.85rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.advisor-card:hover .advisor-avatar-wrap {
+  transform: scale(1.06);
+  border-color: var(--accent-gold);
+}
+
+.advisor-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+
+.advisor-card-body {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.advisor-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.advisor-role {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.65rem;
+  line-height: 1.35;
+}
+
+.advisor-bio {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .founder-img-wrap {

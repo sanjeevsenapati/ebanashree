@@ -363,6 +363,13 @@ export const teamMembers = [
     category: "Advisory Committee",
     image: "images/advisor_ranjan.jpg",
     bio: "Specializes in traditional bamboo construction techniques and low-impact sustainable design."
+  },
+  {
+    name: "Sibaprasad Mishra",
+    role: "Agroforestry & Sustainable Development Advisor",
+    category: "Advisory Committee",
+    image: "images/advisor_sibaprasad.jpg",
+    bio: "Specializes in sustainable agroforestry models, bamboo plantation management, and rural ecological livelihood initiatives across Odisha."
   }
 ];
 
