@@ -29,6 +29,65 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateNavbar);
   updateNavbar();
 
+  // 1.5. Desktop / Touch Dropdown Menu Controller
+  const dropdownItems = document.querySelectorAll('.nav-item.has-dropdown');
+
+  dropdownItems.forEach(item => {
+    const toggleBtn = item.querySelector('.dropdown-toggle');
+    if (!toggleBtn) return;
+
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = item.classList.contains('is-open');
+      dropdownItems.forEach(other => {
+        if (other !== item) {
+          other.classList.remove('is-open');
+          const otherBtn = other.querySelector('.dropdown-toggle');
+          if (otherBtn) otherBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (isOpen) {
+        item.classList.remove('is-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('is-open');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    // Close on clicking any item inside the dropdown
+    item.querySelectorAll('.dropdown-item').forEach(link => {
+      link.addEventListener('click', () => {
+        item.classList.remove('is-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.blur();
+      });
+    });
+  });
+
+  // Close dropdowns on clicking outside
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item.has-dropdown')) {
+      dropdownItems.forEach(item => {
+        item.classList.remove('is-open');
+        const btn = item.querySelector('.dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
+  // Close dropdowns on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      dropdownItems.forEach(item => {
+        item.classList.remove('is-open');
+        const btn = item.querySelector('.dropdown-toggle');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
   // 2. Initialize Mobile Navigation Overlay
   const mobileToggle = document.getElementById('mobileNavToggle');
   const mobileOverlay = document.getElementById('mobileMenuOverlay');

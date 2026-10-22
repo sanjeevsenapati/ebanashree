@@ -45,20 +45,168 @@
         </div>
       </a>
 
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul class="nav-links">
-          <li><a href="#about" class="nav-link">Our Story</a></li>
-          <li><a href="#deforestation" class="nav-link" style="color:var(--accent-gold); font-weight:600;">Deforestation</a></li>
-          <li><a href="#carbon-farming" class="nav-link">Carbon & Farming</a></li>
-          <li><a href="#benefits" class="nav-link">Forest Benefits</a></li>
-          <li><a href="#stay" class="nav-link">Eco Huts</a></li>
-          <li><a href="#experiences" class="nav-link">Experiences</a></li>
-          <li><a href="#gallery" class="nav-link">Gallery</a></li>
-          <li><a href="#location" class="nav-link">Location</a></li>
+          <!-- Category 1: The Farm -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>The Farm</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#about" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🌱</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Our Story & Heritage</span>
+                  <span class="dropdown-desc">The founders, vision & 50-acre journey</span>
+                </div>
+              </a>
+              <a href="#farm" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🎋</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">50-Acre Master Zones</span>
+                  <span class="dropdown-desc">Bamboo species, groves & nursery layout</span>
+                </div>
+              </a>
+              <a href="#sustainability" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">☀️</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Sustainability Mission</span>
+                  <span class="dropdown-desc">Zero chemical, solar powered & water harvesting</span>
+                </div>
+              </a>
+              <a href="#team" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">👥</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Founders & Stewards</span>
+                  <span class="dropdown-desc">Minaketan Sethi & Sanjeev Senapati</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Category 2: Eco & Carbon -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>Eco & Carbon</span>
+              <span class="nav-badge-pill">Climate</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#deforestation" class="dropdown-item highlight-item" role="menuitem">
+                <div class="dropdown-icon">🛡️</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Deforestation Crisis</span>
+                  <span class="dropdown-desc">Why bamboo is earth's fastest green shield</span>
+                </div>
+              </a>
+              <a href="#carbon-farming" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🌿</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Carbon & Bamboo Farming</span>
+                  <span class="dropdown-desc">35% more oxygen & high-density capture</span>
+                </div>
+              </a>
+              <a href="#benefits" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">💨</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Forest Health Benefits</span>
+                  <span class="dropdown-desc">Phytoncides, microclimate & forest therapy</span>
+                </div>
+              </a>
+              <a href="#carbon-calculator" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🧮</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Carbon Calculator</span>
+                  <span class="dropdown-desc">Simulate your bamboo offset impact</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Category 3: Stay & Dine -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>Stay & Dine</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#stay" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🏡</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Eco Huts & Stays</span>
+                  <span class="dropdown-desc">Handcrafted artisan bamboo cottages</span>
+                </div>
+              </a>
+              <a href="#night-stay" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🌌</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Night Stay Experience</span>
+                  <span class="dropdown-desc">Stargazing, fireflies & bamboo rustles</span>
+                </div>
+              </a>
+              <a href="#dining" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🍲</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Authentic Odia Dining</span>
+                  <span class="dropdown-desc">Farm-to-fork claypot & bamboo cooking</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Category 4: Explore & Visit -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+              <span>Explore & Visit</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <div class="dropdown-menu" role="menu">
+              <a href="#experiences" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">🧭</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Forest Experiences</span>
+                  <span class="dropdown-desc">Workshops, bamboo crafts & nature walks</span>
+                </div>
+              </a>
+              <a href="#events" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">✨</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Retreats & Gatherings</span>
+                  <span class="dropdown-desc">Holistic wellness & eco conferences</span>
+                </div>
+              </a>
+              <a href="#gallery" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">📸</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Photo Gallery</span>
+                  <span class="dropdown-desc">Immersive farm photography & video</span>
+                </div>
+              </a>
+              <a href="#location" class="dropdown-item" role="menuitem">
+                <div class="dropdown-icon">📍</div>
+                <div class="dropdown-text">
+                  <span class="dropdown-title">Location & Route</span>
+                  <span class="dropdown-desc">Travel directions to Keonjhar, Odisha</span>
+                </div>
+              </a>
+            </div>
+          </li>
         </ul>
       </nav>
 
-      <div style="display:flex; align-items:center; gap:1rem;">
+      <div class="navbar-actions">
+        <button class="btn-nav-cta" onclick="openBookingModal()" aria-label="Book your stay">
+          <span>Book Stay</span>
+        </button>
         <button class="mobile-toggle" id="mobileNavToggle" aria-label="Open Navigation Menu">
           ☰
         </button>
@@ -823,24 +971,75 @@
 
   <!-- Fullscreen Mobile Navigation Drawer -->
   <div class="mobile-menu-overlay" id="mobileMenuOverlay">
-    <button class="mobile-menu-close" id="mobileMenuClose">✕</button>
-    <ul class="mobile-nav-links">
-      <li><a href="#about" class="mobile-nav-link">Our Story</a></li>
-      <li><a href="#deforestation" class="mobile-nav-link" style="color:var(--accent-gold-light);">Deforestation & Forest Defense</a></li>
-      <li><a href="#carbon-farming" class="mobile-nav-link">Carbon & Bamboo Farming</a></li>
-      <li><a href="#benefits" class="mobile-nav-link">Forest Health Benefits</a></li>
-      <li><a href="#farm" class="mobile-nav-link">50-Acre Zones</a></li>
-      <li><a href="#stay" class="mobile-nav-link">Eco Huts</a></li>
-      <li><a href="#night-stay" class="mobile-nav-link">Night Stay</a></li>
-      <li><a href="#experiences" class="mobile-nav-link">Experiences</a></li>
-      <li><a href="#dining" class="mobile-nav-link">Odia Dining</a></li>
-      <li><a href="#sustainability" class="mobile-nav-link">Sustainability</a></li>
-      <li><a href="#gallery" class="mobile-nav-link">Gallery</a></li>
-      <li><a href="#location" class="mobile-nav-link">Location & Directions</a></li>
-    </ul>
-    <button class="btn btn-accent" onclick="openBookingModal(); document.getElementById('mobileMenuOverlay').classList.remove('active');">
-      Book Your Stay Now
-    </button>
+    <div class="mobile-menu-header">
+      <div class="brand-logo">
+        <div class="logo-icon">e</div>
+        <div class="logo-text">
+          <span class="logo-title" style="color:#FFF;">eBanashree</span>
+          <span class="logo-subtitle">Keonjhar, Odisha</span>
+        </div>
+      </div>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+    </div>
+
+    <div class="mobile-menu-body">
+      <!-- Group 1 -->
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-group-title">
+          <span>🎋</span> The Farm & Story
+        </div>
+        <ul class="mobile-group-links">
+          <li><a href="#about" class="mobile-nav-link"><span>Our Story & Heritage</span> <span>→</span></a></li>
+          <li><a href="#farm" class="mobile-nav-link"><span>50-Acre Master Zones</span> <span>→</span></a></li>
+          <li><a href="#sustainability" class="mobile-nav-link"><span>Sustainability Mission</span> <span>→</span></a></li>
+          <li><a href="#team" class="mobile-nav-link"><span>Founders & Stewards</span> <span>→</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Group 2 -->
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-group-title">
+          <span>🌿</span> Eco & Carbon
+        </div>
+        <ul class="mobile-group-links">
+          <li><a href="#deforestation" class="mobile-nav-link" style="color:var(--accent-gold-light); font-weight:600;"><span>Deforestation Crisis ⚡</span> <span>→</span></a></li>
+          <li><a href="#carbon-farming" class="mobile-nav-link"><span>Carbon & Bamboo Farming</span> <span>→</span></a></li>
+          <li><a href="#benefits" class="mobile-nav-link"><span>Forest Health Benefits</span> <span>→</span></a></li>
+          <li><a href="#carbon-calculator" class="mobile-nav-link"><span>Carbon Calculator</span> <span>→</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Group 3 -->
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-group-title">
+          <span>🏡</span> Stay & Dining
+        </div>
+        <ul class="mobile-group-links">
+          <li><a href="#stay" class="mobile-nav-link"><span>Eco Huts & Stays</span> <span>→</span></a></li>
+          <li><a href="#night-stay" class="mobile-nav-link"><span>Night Stay Experience</span> <span>→</span></a></li>
+          <li><a href="#dining" class="mobile-nav-link"><span>Authentic Odia Dining</span> <span>→</span></a></li>
+        </ul>
+      </div>
+
+      <!-- Group 4 -->
+      <div class="mobile-nav-group">
+        <div class="mobile-nav-group-title">
+          <span>🧭</span> Explore & Visit
+        </div>
+        <ul class="mobile-group-links">
+          <li><a href="#experiences" class="mobile-nav-link"><span>Forest Experiences</span> <span>→</span></a></li>
+          <li><a href="#events" class="mobile-nav-link"><span>Retreats & Gatherings</span> <span>→</span></a></li>
+          <li><a href="#gallery" class="mobile-nav-link"><span>Photo Gallery</span> <span>→</span></a></li>
+          <li><a href="#location" class="mobile-nav-link"><span>Location & Directions</span> <span>→</span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <button class="btn btn-accent" style="width:100%;" onclick="openBookingModal(); document.getElementById('mobileMenuOverlay').classList.remove('active'); document.body.style.overflow = '';">
+        Book Your Stay Now
+      </button>
+    </div>
   </div>
 
   <!-- Interactive Booking Enquiry Modal -->
